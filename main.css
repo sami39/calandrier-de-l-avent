@@ -1,0 +1,83 @@
+
+
+body{
+  min-height: 100%;
+  background-image: url('images/bg2.png');
+  background-color:black !important;
+  background-repeat: repeat;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+
+ 
+}
+
+
+.card {
+ 
+  width:520px;
+  height: 350px;
+  background:white;
+  padding:32px;
+  border-radius:16px;
+  text-align: center;
+}
+
+.card__santa {
+  height:80px;
+}
+
+.card__title {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 30px;
+  text-shadow:#4CAF50 1px 0 10px;
+  color: #e40000;
+  text-align: center;
+}
+
+.card__images {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__images img {
+  height:82px;
+}
+.circle{
+
+  
+  color: white;
+  height: 170px;
+  width: 170px;
+  border:solid ;
+  border-radius:30px ;
+  background:#4CAF50;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin: 22px;
+  -webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  
+}
+ 
+.circle:hover  {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
