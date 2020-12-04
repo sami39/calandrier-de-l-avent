@@ -176,7 +176,7 @@ function randomBetween(min, max) {
       day= box[randomNumber];
       box.splice(randomNumber, 1);
       circle.className = "circle";
-      circle.innerHTML='<a href=""  onclick="myFunction('+day+')"><img src="images/' + day + '.jpg" style="width=50px; display: none ;" id="toto" height="50px" >'+day+'</a>';
+      circle.innerHTML='<div onclick="myFunction('+day+')"><img src="images/' + day + '.jpg" style="width=125px; display: none ;" id="toto'+day+'" height="125px"  >'+day+'</div>';
       document.getElementById("calendrier").appendChild(circle);
       console.log( circle.id)
       
@@ -258,7 +258,7 @@ function myFunction(day) {
 
 
  
-  if (day >= theDay[2]) {
+  if (day > theDay[2]) {
    
     document.getElementById('circle'+day).innerHTML= 'Hep Hep Hep, on ne triche pas !';
       
@@ -266,7 +266,7 @@ function myFunction(day) {
 
 
       
-      document.getElementById('toto').style.display = "block";
+      document.getElementById('toto'+day+'').style.display = "block";
   }
  
 }
